@@ -4,40 +4,73 @@
     <meta charset="UTF-8">
     <title>Google</title>
 <style>
+    html,
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
     /* Add a white background color to the top nav bar*/
-    .topnav {
+    .topNav, {
         background-color: white;
         overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .rightNav{
+        background-color: white;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
     /* Style the links inside the nav bar*/
-    .topnav a {
+    .topNav a,
+    .rightNav a{
         float: left;
         color: black;
-        text-align: left;
         padding: 14px 16px;
         text-decoration: none;
         font-size: .85em;
     }
     /* Change the appearance of links on hover*/
-    .topnav a:hover {
+    .topNav a:hover, 
+    .rightNav a:hover {
         text-decoration: underline;
     }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        magin-top: auto;
+    }
+  
 </style>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="#about">About</a>
-        <a href="#store">Store</a>
-        <a href="#gmail">Gmail</a>
-        <a href="#images">Images</a>
-
-        </div>
-
-
-
-    <img src="/images/gLogo.png" width="auto" max-height="100%" alt="Google Logo">
     
+    <div class="topNav">
+        <a class= "active" href="#"></a>
+        <a href="#">About</a>
+        <a href="#">Store</a>
+    </div>
+    <div class="rightNav">
+        <a class= "active" href="#"> </a>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <a href="#">" </a>
+    </div>
+
+    <div class="logo">
+    <img src="/images/gLogo.png" width="auto" max-height="50%" alt="Google Logo">
+    </div>
 
 
 
