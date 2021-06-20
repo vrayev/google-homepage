@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Google</title>
 <style>
+    
     html,
     body{
         width: 100%;
@@ -11,40 +12,43 @@
         margin: 0;
     }
 
-    /* Add a white background color to the top nav bar*/
-    .topNav, {
+    /* Add a white background color to the top nav bar and style bar*/
+    ul {
+        display:block;
         background-color: white;
         overflow: hidden;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
+        list-style-type: none;
+        margin: 0;
+        padding: 6px;
     }
 
-    .rightNav{
-        background-color: white;
-        overflow: hidden;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
     /* Style the links inside the nav bar*/
-    .topNav a,
-    .rightNav a{
+    ul a{
         float: left;
         color: black;
         padding: 14px 16px;
         text-decoration: none;
         font-size: .85em;
+        
     }
     /* Change the appearance of links on hover*/
-    .topNav a:hover, 
-    .rightNav a:hover{
+    ul a:hover{
         text-decoration: underline;
     }
-
-    .hamIcon{
+    button{
+        appearance: auto;
+        
+        background-color: gray;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        margin: 8px;
+        align-items: center;
+        border: 15px 15px;
+        width: 24px;
+        height: 24px;
+    }
+    button a:hover{
+        border: black;
     }
 
     .logo{
@@ -55,137 +59,21 @@
         height:100%;
         margin-top: auto;
     }
-    /* below is an attempt to make a hamburger icon like 
-    google with 3x3 dots, icon is there and has hover effect
-    but I couldnt get it to do what I wanted so im going 
-    to use an image of the icon instead.
-
-#nav-icon1{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    transition: .1s;
-    margin: 10px 10px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-  #nav-icon1 span{
-      width: 5px;
-      height: 5px;
-      background-color: black;
-      display: block;
-      border-radius: 50%;
-      position: absolute;
-  }
-  #nav-icon1:hover span{
-      transform: scale(1.3);
-      transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
-  }
-
-  #nav-icon1 span:nth-child(1){
-      left:0;
-      top:0;
-  }
-  #nav-icon1 span:nth-child(2){
-      left:12px;
-      top:0;
-  }
-  #nav-icon1 span:nth-child(3){
-      right:0;
-      top:0;
-  }
-  #nav-icon1 span:nth-child(4){
-      left:0;
-      top:12px;
-  }
-  #nav-icon1 span:nth-child(5){
-      position:absolute;
-      left:12px;
-      top:12px;
-  }
-  #nav-icon1 span:nth-child(6){
-      right:0px;
-      top:12px;
-  }
-  #nav-icon1 span:nth-child(7){
-      left:0px;
-      bottom:0px;
-  }
-  #nav-icon1 span:nth-child(8){
-      position:absolute;
-      left:12px;
-      bottom:0px;
-  }
-  #nav-icon1 span:nth-child(9){
-      right:0px;
-      bottom:0px;
-  }
-
-  #nav-menu1:checked ~ label> #nav-icon1{
-      transform: rotate(180deg);
-      cursor: pointer;
-      transition: .2s cubic-bezier(.8, .5, .2, 1.4);
-  }
-
-  #nav-menu1:checked ~ label> #nav-icon1 span{
-      border-radius: 50%;
-      transition-delay: 200ms;
-      transition: .5s cubic-bezier(.8, .5, .2, 1.4);
-  }
-  #nav-menu1:checked ~ label> #nav-icon1 span:nth-child(2){
-      left: 6px;
-      top: 6px;
-  }
-  #nav-menu1:checked ~ label> #nav-icon1 span:nth-child(4){
-      left: 6px;
-      top: 18px;
-  }
-  #nav-menu1:checked ~ label> #nav-icon1 span:nth-child(6){
-      right: 6px;
-      top: 6px;
-  }
-  #nav-menu1:checked ~ label> #nav-icon1 span:nth-child(8){
-      left: 18px;
-      bottom: 6px;
-  }
-  #nav-menu1{
-      display:none;
-  }
-  */
+   
 
 </style>
 </head>
 
 <body>
     
-    <div class="topNav">
-        <a class= "active" href="#"></a>
-        <a href="#">About</a>
-        <a href="#">Store</a>
-    </div>
-    <div class="rightNav">
-        <a class= "active" href="#"> </a>
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-        <img class="gHamIcon" src="images/gHamIcon.png" width="auto" height="30px" alt="Menu Icon">
-    <!--  below is html for the now scrapped coded hamburger
-    icon like googles
-        <input type="checkbox" id="nav-menu1">
-        <label id="nav-icon1" for="nav-menu1">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>        
-        <span></span>
-        <span></span>
-        <span></span>
-        </label>
-        -->
-    </div>
-    
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+        <li style="float:right"><a href="#">!</a></li>
+        <li><button style="float:right"><img src="/images/gHamIcon.png"></button></li>
+        <li style="float:right" ><a href="#">Images</a></li>
+        <li style="float:right"><a href="#">Gmail</a></li>
+    </ul>
 
     <div class="logo">
     <img src="/images/gLogo.png" width="auto" max-height="50%" alt="Google Logo">
