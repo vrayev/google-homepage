@@ -92,6 +92,25 @@
         cursor: pointer;
     }
 
-    .glogo:hover{
+    .glogo:hover {
         cursor: default;
+    }
+
+    .button-container {
+        padding-top: 53px;
+    }
+
+    button {
+        background-color: #F8F9FA;
+        border-radius: 5px;
+        border: none;
+        height: 36px;
+        padding: 0 20px;
+        margin: 0 4px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        border: 1px solid rgb(192, 192, 192);
+        box-shadow: 0 0 10px 0 gainsboro;
     }
