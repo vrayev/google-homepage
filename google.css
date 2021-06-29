@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Product Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-}
+    
     html,
     body {
         font-family: Arial, sans-serif;
@@ -24,6 +19,7 @@
         text-decoration: underline;
         cursor: pointer;
     }
+
 
     nav {
         display: flex;
@@ -136,10 +132,14 @@
    }
 
    #footer-middle {
-       display: flex;
-       justify-content: space-between;
-       padding-left: 20px;
-       align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    align-items: center;
+   }
+
+   #footer-middle > img {
+       margin-right: -15px;
    }
 
    #footer-right {
@@ -147,4 +147,55 @@
     justify-content: flex-end;
     padding-left: 20px;
     align-items: center;
+   }
+
+   @media (max-width: 630px) {
+       
+    #footer-nav {
+        flex-direction: column;
+    }
+
+    #footer-left {
+        justify-content: center;
+    }
+
+    #footer-middle {
+        justify-content: center;
+    }
+
+    #footer-right {
+        justify-content: center;
+    }
+
+    .input-container {
+        width: 95vw;
+    }
+   }
+
+   @media (max-height: 522px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    footer {
+        position: relative;
+    }
+   }
+
+   @media (max-height: 570px) and (max-width: 630) {
+       
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        margin-bottom: 13px;
+    }
+
+    footer {
+        position: relative;
+    }
    }
