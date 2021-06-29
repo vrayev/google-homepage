@@ -68,6 +68,7 @@
         margin-top: 5vh;
     }
 
+
     .input-container {
         display: flex;
         justify-content: space-between;
@@ -75,6 +76,7 @@
         height: 38px;
         border: 1px solid gainsboro;
         border-radius: 20px;
+        margin-top: 20px;
     }
 
     .input-container:hover {
@@ -86,6 +88,10 @@
         flex-grow: 1;
         border: none;
         outline: none;
+    }
+
+    .input-container > img{
+        margin-right: 10px;
     }
 
     img:hover {
@@ -114,3 +120,31 @@
         border: 1px solid rgb(192, 192, 192);
         box-shadow: 0 0 10px 0 gainsboro;
     }
+
+   footer {
+       background-color: #F2F2F2;
+       position: fixed;
+       bottom: 0;
+       width: 100vw;
+   }
+
+   #footer-left {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+   }
+
+   #footer-middle {
+       display: flex;
+       justify-content: space-between;
+       padding-left: 20px;
+       align-items: center;
+   }
+
+   #footer-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+    align-items: center;
+   }
