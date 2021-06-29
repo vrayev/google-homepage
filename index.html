@@ -2,84 +2,72 @@
 <html lang= "en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <title>Google</title>
+    <link rel="icon" href="images/google-icon.png">
+    <link rel="stylesheet" href="googe.css">
 <style>
-    
+    @font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
     html,
-    body{
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 1em;;
         width: 100%;
-        height: 100%;
+        height: 100vh;
+ 
         margin: 0;
-    }
-
-    /* Add a white background color to the top nav bar and style bar*/
-    ul {
-        display:block;
-        background-color: white;
-        overflow: hidden;
-        list-style-type: none;
-        margin: 0;
-        padding: 6px;
-    }
-
-    /* Style the links inside the nav bar*/
-    ul a{
-        float: left;
-        color: black;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: .85em;
+        
         
     }
-    /* Change the appearance of links on hover*/
-    ul a:hover{
-        text-decoration: underline;
-    }
-    button{
-        appearance: auto;
-        
-        background-color: gray;
-        display: flex;
-        flex-direction: column;
-        margin: 8px;
-        align-items: center;
-        border: 15px 15px;
-        width: 24px;
-        height: 24px;
-    }
-    button a:hover{
-        border: black;
-    }
 
-    .logo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height:100%;
-        margin-top: auto;
-    }
    
 
 </style>
 </head>
 
 <body>
-    
-    <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Store</a></li>
-        <li style="float:right"><a href="#">!</a></li>
-        <li><button style="float:right"><img src="/images/gHamIcon.png"></button></li>
-        <li style="float:right" ><a href="#">Images</a></li>
-        <li style="float:right"><a href="#">Gmail</a></li>
-    </ul>
+    <header>
+        <nav>
+            <ul class="header-nav">
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Store</a></li>
+                 <li style="float:right"><a href="#">!</a></li>
+                 <li style="float:right"><a href="#"><img src="/images/gHamIcon.png" height="23px" width="23px"></a></li>
+                 <li style="float:right" ><a href="#">Images</a></li>
+                 <li style="float:right"><a href="#">Gmail</a></li>
+            </ul>
+        </nav>
 
+
+
+    </header>
+    <section>
     <div class="logo">
-    <img src="/images/gLogo.png" width="auto" max-height="50%" alt="Google Logo">
+    <img class ="glogo" src="/images/gLogo.png" width="auto"  alt="Google Logo">
     </div>
+    <div class="input">
+    <img src="/images/glass-2.png" alt="searchIcon">
+    <input class ="input" type="text" id="search">
+    <img src="/images/mic-2.png" alt="micIcon">
+    <button class="gSearchBtn" id="googleSearchBtn">Google Search</button>
+    <button class="gSearchBtn">I'm Feeling Lucky</button>
+    </div>
+    </section>
 
-
+    <div id="footer">
+        <a href="#" id="advertising">Advertising</a>
+        <a href="#" id="business">Business</a>
+        <a href="#" id="how">How Search Works</a>
+        <a href="#" id="">Carbon Neutral Since 2007</a>
+        <a href="#" id="">Privacy</a>
+        <a href="#" id="">Terms</a>
+        <a href="#" id="">Services</a>
+    </div>
 
 </body>
 </html>
